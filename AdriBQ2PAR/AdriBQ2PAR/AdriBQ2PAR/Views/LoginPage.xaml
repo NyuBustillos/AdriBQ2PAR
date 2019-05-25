@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AdriBQ2PAR.Views.LoginPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                Padding="15"
+                BackgroundColor="Beige">
+                <Image
+                    Source="">
+                </Image>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Text="Correo"
+                        TextColor="Black">
+
+                    </Label>
+                    <Entry
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Text="{Binding Correo,Mode=TwoWay}"
+                        Placeholder="Ingrese su correo">
+                    </Entry>
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="Password"
+                        TextColor="Black">
+                    </Label>
+                    <Entry
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        IsPassword="True"
+                        Text="{Binding Password,Mode=TwoWay}"
+                        Placeholder="Ingrese su clave">
+                    </Entry>
+
+                </Grid>
+                <ActivityIndicator
+                    IsRunning="{Binding IsRunning}">
+                </ActivityIndicator>
+                <Button
+                    BackgroundColor="Lavender"
+                    Text="Ingrese"
+                    Command="{Binding LoginCommand, Mode=TwoWay}"
+                    IsEnabled="{Binding IsEnable}"
+                    TextColor="BlueViolet">
+                </Button>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
