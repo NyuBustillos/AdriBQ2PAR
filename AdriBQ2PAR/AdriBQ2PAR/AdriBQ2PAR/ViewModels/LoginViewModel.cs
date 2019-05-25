@@ -9,21 +9,15 @@ namespace AdriBQ2PAR.ViewModels
     class LoginViewModel:BaseViewModel
     {
         #region variables
-        string correo;
-        string password;
+        string notas;
         bool isrunning;
         bool isenabled;
         #endregion
         #region propiedades
         public string Correo
         {
-            get { return this.correo; }
-            set { SetValue(ref this.correo, value); }
-        }
-        public string Password
-        {
-            get { return this.password; }
-            set { SetValue(ref this.password, value); }
+            get { return this.notas; }
+            set { SetValue(ref this.notas, value); }
         }
         public bool IsRunning
         {
@@ -44,17 +38,10 @@ namespace AdriBQ2PAR.ViewModels
 
         private async void Login()
         {
-            if (string.IsNullOrEmpty(Correo))
+            if (string.IsNullOrEmpty(notas))
             {
-                await App.Current.MainPage.DisplayAlert("Correo vacío",
-                                                  "Por favor ingrese correo",
-                                                  "Aceptar");
-                return;
-            }
-            if (string.IsNullOrEmpty(Password))
-            {
-                await App.Current.MainPage.DisplayAlert("Contraseña vacía",
-                                                  "Por favor ingrese contraseña",
+                await App.Current.MainPage.DisplayAlert("Nota vacía",
+                                                  "Por favor ingrese Nota",
                                                   "Aceptar");
                 return;
             }
