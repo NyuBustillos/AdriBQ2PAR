@@ -9,7 +9,7 @@
         <ScrollView>
             <StackLayout
                 Padding="15"
-                BackgroundColor="Beige">
+                BackgroundColor="Aquamarine">
                 <Image
                     Source="">
                 </Image>
@@ -21,30 +21,16 @@
                     <Label
                         Grid.Row="0"
                         Grid.Column="0"
-                        Text="Correo"
+                        Text="Contents"
                         TextColor="Black">
 
                     </Label>
                     <Entry
                         Grid.Row="0"
                         Grid.Column="1"
-                        Text="{Binding Correo,Mode=TwoWay}"
-                        Placeholder="Ingrese su correo">
+                        Text="{Binding Contents,Mode=TwoWay}"
+                        Placeholder="Ingrese Contents">
                     </Entry>
-                    <Label
-                        Grid.Row="1"
-                        Grid.Column="0"
-                        Text="Password"
-                        TextColor="Black">
-                    </Label>
-                    <Entry
-                        Grid.Row="1"
-                        Grid.Column="1"
-                        IsPassword="True"
-                        Text="{Binding Password,Mode=TwoWay}"
-                        Placeholder="Ingrese su clave">
-                    </Entry>
-
                 </Grid>
                 <ActivityIndicator
                     IsRunning="{Binding IsRunning}">
