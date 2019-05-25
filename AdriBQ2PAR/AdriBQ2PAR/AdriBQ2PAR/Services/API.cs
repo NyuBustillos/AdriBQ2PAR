@@ -10,5 +10,4 @@ using Newtonsoft.Json;
 namespace AdriBQ2PAR.Services
 {
     
-
 }
