@@ -14,7 +14,7 @@ namespace AdriBQ2PAR.ViewModels
         bool isenabled;
         #endregion
         #region propiedades
-        public string Correo
+        public string Notas
         {
             get { return this.notas; }
             set { SetValue(ref this.notas, value); }
@@ -38,7 +38,7 @@ namespace AdriBQ2PAR.ViewModels
 
         private async void Login()
         {
-            if (string.IsNullOrEmpty(notas))
+            if (string.IsNullOrEmpty(Notas))
             {
                 await App.Current.MainPage.DisplayAlert("Nota vacía",
                                                   "Por favor ingrese Nota",
@@ -49,6 +49,7 @@ namespace AdriBQ2PAR.ViewModels
         }
 
         #endregion
+
 
 
 

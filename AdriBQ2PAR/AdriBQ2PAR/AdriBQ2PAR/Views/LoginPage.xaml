@@ -4,12 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
              x:Class="AdriBQ2PAR.Views.LoginPage">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout
                 Padding="15"
-                BackgroundColor="Aquamarine">
+                BackgroundColor="MistyRose">
                 <Image
                     Source="">
                 </Image>
@@ -36,14 +37,13 @@
                     IsRunning="{Binding IsRunning}">
                 </ActivityIndicator>
                 <Button
-                    BackgroundColor="Lavender"
+                    BackgroundColor="RosyBrown"
                     Text="Registrar"
                     Command="{Binding LoginCommand, Mode=TwoWay}"
                     IsEnabled="{Binding IsEnable}"
-                    TextColor="BlueViolet">
+                    TextColor="Black">
                 </Button>
             </StackLayout>
         </ScrollView>
-
     </ContentPage.Content>
 </ContentPage>

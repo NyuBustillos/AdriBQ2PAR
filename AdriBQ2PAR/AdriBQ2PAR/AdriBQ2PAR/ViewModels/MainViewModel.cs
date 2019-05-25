@@ -1,14 +1,11 @@
-﻿using System.Collections.Generic;
-using System.Text;
-
-namespace AdriBQ2PAR.ViewModels
+﻿namespace AdriBQ2PAR.ViewModels
 {
-    using Models;
-    using System;
-    using System.Collections.ObjectModel;
-
     public class MainViewModel
     {
+        #region Properties
+        public string Token { get; set; }
+        public string TokenType { get; set; }
+        #endregion
 
         #region ViewModels
         public LoginViewModel Login { get; set; }
@@ -36,6 +33,7 @@ namespace AdriBQ2PAR.ViewModels
         #endregion
 
     }
+
 
 
 }
