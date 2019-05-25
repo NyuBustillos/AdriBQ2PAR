@@ -21,7 +21,7 @@
                     <Label
                         Grid.Row="0"
                         Grid.Column="0"
-                        Text="Contents"
+                        Text="Nota"
                         TextColor="Black">
 
                     </Label>
@@ -29,7 +29,7 @@
                         Grid.Row="0"
                         Grid.Column="1"
                         Text="{Binding Contents,Mode=TwoWay}"
-                        Placeholder="Ingrese Contents">
+                        Placeholder="Ingrese Nota">
                     </Entry>
                 </Grid>
                 <ActivityIndicator
@@ -37,7 +37,7 @@
                 </ActivityIndicator>
                 <Button
                     BackgroundColor="Lavender"
-                    Text="Ingrese"
+                    Text="Registrar"
                     Command="{Binding LoginCommand, Mode=TwoWay}"
                     IsEnabled="{Binding IsEnable}"
                     TextColor="BlueViolet">
